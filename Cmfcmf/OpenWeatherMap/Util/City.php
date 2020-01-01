@@ -76,7 +76,8 @@ class City extends Location
      * @param int $offset The timezone offset in seconds from UTC.
      * @return int        The timezone offset in +/-HH:MM form.
      */
-    private static function timezoneOffsetInSecondsToHours($offset) {
+    private static function timezoneOffsetInSecondsToHours($offset)
+    {
         $minutes = floor(abs($offset) / 60) % 60;
         $hours = floor(abs($offset) / 3600);
 
